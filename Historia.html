@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Historia de Porsche</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            padding-top: 80px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: gray;
+        }
+
+        h1 { 
+            font-size: 3em; 
+            margin-bottom: 40px; /* incrementado para mejor separación del contenido */
+        }
+        h2 { 
+            font-size: 2em; 
+            margin-top: 80px; /* más espacio arriba */
+            margin-bottom: 25px; /* espacio abajo para separar bien títulos de texto */
+            border-bottom: 2px solid gray; 
+            padding-bottom: 10px; 
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 20px;
+            margin-bottom: 40px; /* más separación entre párrafos y siguientes elementos */
+            opacity: 0; /* Inicialmente oculto */
+            transform: translateY(20px); /* Desplazado hacia abajo */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 60px auto; /* centrado horizontal + margen inferior */
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255,255,255,0.2);
+            opacity: 0; /* Inicialmente oculto */
+            transform: translateY(20px); /* Desplazado hacia abajo */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: auto;
+            padding: 40px 20px; /* aumenté vertical y mantuve horizontal */
+            text-align: left; /* para que el texto se alinee a la izquierda */
+        }
+
+        header {
+            background-color: black;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 60px;
+            z-index: 1000;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: gray;
+        }
+
+        .button {
+            display: block;
+            margin: 70px auto 40px auto;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: white;
+            background-color: gray;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 5px;
+            text-align: center;
+            width: max-content;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+
+        .visible {
+            opacity: 1; /* Visible */
+            transform: translateY(0); /* En su posición original */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <nav>
+                <a href="#Los Primeros Años">Los Primeros Años</a>
+                <a href="#La Fundación de Porsche como Marca">La Fundación de Porsche como Marca</a>
+                <a href="#Expansión y Éxito Internacional">Expansión y Éxito Internacional</a>
+                <a href="#El Porsche 911">El Porsche 911</a>
+                <a href="#Innovaciones y Nuevos Modelos">Innovaciones y Nuevos Modelos</a>
+                <a href="#El Porsche 959">El Porsche 959</a>
+                <a href="#Crisis y Transformación">Crisis y Transformación</a>
+                <a href="#El Nuevo Milenio">El Nuevo Milenio</a>
+                <a href="#Porsche 918 Spyder">Porsche 918 Spyder</a>
+                <a href="#Innovación Eléctrica: Porsche Taycan (2019)">Innovación Eléctrica: Porsche Taycan (2019)</a>
+                <a href="#Porsche en la Actualidad">Porsche en la Actualidad</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Historia de Porsche</h1>
+
+        <section id="historia">
+            <div class="container">
+                <h2 id="Los Primeros Años">Los Primeros Años (1930-1940)</h2>
+                <p>La historia de Porsche comienza en 1931 con la fundación de la Dr. Ing. h.c. F. Porsche GmbH, una empresa de ingeniería automotriz creada por Ferdinand Porsche en Stuttgart, Alemania. Porsche inicialmente no fabricaba autos, sino que era una empresa de consultoría que ofrecía servicios de desarrollo de vehículos. Fue en 1934 cuando la empresa recibió una solicitud de Volkswagen para diseñar un "auto del pueblo", lo que dio lugar al famoso Volkswagen Beetle. Este auto fue un éxito rotundo y ayudó a consolidar a Porsche en el mundo automotriz.</p>
+                <img src="media/Ferdinand Porsche.jpg" alt="Ferdinand Porsche" />
+
+                <h2 id="La Fundación de Porsche como Marca">La Fundación de Porsche como Marca (1948)</h2>
+                <p>En 1948, después de la Segunda Guerra Mundial, Ferdinand Porsche, junto con su hijo Ferry Porsche, decidió fundar una marca automotriz independiente. En ese año, Porsche lanzó su primer automóvil, el Porsche 356, que fue diseñado por Ferdinand "Ferry" Porsche. Este automóvil utilizaba un motor trasero y una carrocería ligera, lo que le dio un carácter deportivo. El 356 fue producido en colaboración con la empresa Reutter Karosserie, que se encargó de la fabricación de la carrocería. El éxito del 356 estableció a Porsche como una marca de autos deportivos de alto rendimiento.</p>
+                <img src="media/Porsche 356.jpg" alt="Porsche 356" />
+
+                <h2 id="Expansión y Éxito Internacional">Expansión y Éxito Internacional (1950-1970)</h2>
+                <p>Durante las décadas de 1950 y 1960, Porsche experimentó un rápido crecimiento. El Porsche 356 se hizo muy popular entre los entusiastas de los autos deportivos, y se desarrollaron diferentes versiones, como el 356 A, B y C. Sin embargo, el verdadero salto hacia el éxito vino con el lanzamiento del Porsche 911 en 1964.</p>
+
+                <h2 id="El Porsche 911">El Porsche 911</h2>
+                <p>El Porsche 911, diseñado por Ferdinand "Butzi" Porsche, hijo de Ferry Porsche, fue revolucionario en su diseño. Con su motor trasero y su distintiva carrocería de dos puertas, el 911 se convirtió en un ícono del automovilismo y es considerado uno de los autos más influyentes de la historia. A lo largo de los años, el 911 ha sido actualizado y mejorado, pero siempre ha mantenido su esencia, convirtiéndose en uno de los autos deportivos más admirados del mundo.</p>
+                <p>Durante este periodo, Porsche también incursionó en el mundo de las competiciones, obteniendo importantes victorias en eventos como las 24 Horas de Le Mans y Rally Dakar, lo que ayudó a cimentar su reputación como fabricante de autos de alto rendimiento.</p>
+                <img src="media/Porsche 911 60.jpg" alt="Porsche 911 60" width="800" height="500" />
+
+                <h2 id="Innovaciones y Nuevos Modelos">Innovaciones y Nuevos Modelos (1970-1990)</h2>
+                <p>En la década de 1970, Porsche continuó con la expansión de su línea de vehículos. En 1978, Porsche presentó el Porsche 924, un auto deportivo de tracción delantera que fue más accesible que el 911, lo que permitió a Porsche llegar a un público más amplio.</p>
+                <p>Durante los años 80 y 90, Porsche consolidó su imagen de lujo y alto rendimiento. Se crearon nuevos modelos como el Porsche 944 y el Porsche 968, que ofrecían una excelente relación calidad-precio, pero siempre con el enfoque en la ingeniería avanzada.</p>
+                <img src="media/Porsche 924.jpg" alt="Porsche 924" width="800" height="500" />
+
+                <h2 id="El Porsche 959">El Porsche 959</h2>
+                <p>A finales de los 80, Porsche lanzó el Porsche 959, que fue uno de los autos más avanzados tecnológicamente de su tiempo, con tracción en las cuatro ruedas, turboalimentación y una aerodinámica de vanguardia. El 959 es considerado uno de los autos más innovadores de la década y marcó el camino para los autos deportivos de alto rendimiento en los años venideros.</p>
+                <img src="media/Porsche 959.jpg" alt="Porsche 959" width="800" height="500" />
+
+                <h2 id="Crisis y Transformación">Crisis y Transformación (1990-2000)</h2>
+                <p>Durante la década de 1990, Porsche enfrentó algunos problemas financieros. La producción de algunos modelos, como el Porsche 928, no fue tan exitosa como se esperaba. Sin embargo, Porsche logró superar esta crisis y en 1997 adquirió Volkswagen, estableciendo una relación aún más estrecha con la marca que había sido fundamental en su origen.</p>
+                <p>En 1996, Porsche presentó el Boxster, un roadster que se convirtió en un éxito de ventas. El Boxster era más asequible que el 911, pero seguía ofreciendo una experiencia de conducción deportiva.</p>
+                <img src="media/Porsche 928.jpg" alt="Porsche 928" width="800" height="500" />
+
+                <h2 id="El Nuevo Milenio">El Nuevo Milenio (2000-Presente)</h2>
+                <p>En los años 2000, Porsche se enfocó en diversificar su gama de modelos y en expandir su presencia internacional. El Porsche Cayenne, un SUV de lujo lanzado en 2002, fue un éxito rotundo y ayudó a Porsche a asegurar su estabilidad financiera.</p>
+                <p>En 2010, Porsche lanzó el Porsche Panamera, un sedán de lujo que también se convirtió en un éxito comercial. Porsche continuó con la expansión de su línea, y el Porsche Macan, un SUV compacto, fue presentado en 2014, consolidando aún más su posición en el mercado global.</p>
+                <img src="media/Porsche Panamera.jpg" alt="Porsche Panamera" width="800" height="200" />
+
+                <h2 id="Porsche 918 Spyder">Porsche 918 Spyder</h2>
+                <p>En 2015, Porsche lanzó el 918 Spyder, un superdeportivo híbrido de alto rendimiento que marcó el inicio de una nueva era para la marca, integrando tecnología híbrida en sus vehículos de alto rendimiento. El 918 Spyder fue uno de los autos más rápidos y avanzados tecnológicamente de su tiempo.</p>
+                <img src="media/Porsche 918 Spyder.jpg" alt="Porsche 918 Spyder" width="1000" height="500" />
+
+                <h2 id="Innovación Eléctrica: Porsche Taycan (2019)">Innovación Eléctrica: Porsche Taycan (2019)</h2>
+                <p>En 2019, Porsche presentó su primer automóvil totalmente eléctrico, el Porsche Taycan, que se convirtió en un referente de los autos eléctricos de lujo y alto rendimiento. El Taycan ha sido aclamado por su diseño, rendimiento y tecnología de punta, mostrando que Porsche está listo para competir en el futuro de la movilidad eléctrica.</p>
+                <img src="media/Porsche Taycan.jpg" alt="Porsche Taycan" width="800" height="200" />
+
+                <h2 id="Porsche en la Actualidad">Porsche en la Actualidad</h2>
+                <p>Hoy en día, Porsche sigue siendo una de las marcas de autos deportivos más prestigiosas del mundo. La compañía continúa innovando, con planes de expandir su gama de vehículos eléctricos y seguir desarrollando autos de alto rendimiento para satisfacer las demandas del mercado global.</p>
+
+                <p>En resumen, la historia de Porsche es una historia de innovación, pasión por el automovilismo y éxito empresarial. Desde sus humildes comienzos como una empresa de ingeniería hasta convertirse en un icono mundial, Porsche ha dejado una huella imborrable en el mundo del automovilismo y sigue siendo un símbolo de calidad y rendimiento.</p>
+
+                <button class="button" onclick="window.location.href='Porsche.html'">Página de Inicio</button>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Altura del header para offset
+        const headerHeight = document.querySelector('header').offsetHeight;
+
+        // Función para mostrar elementos al hacer scroll
+        const showElements = () => {
+            const elements = document.querySelectorAll('p, img');
+            const windowHeight = window.innerHeight;
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('visible');
+                } else {
+                    element.classList.remove('visible');
+                }
+            });
+        };
+
+        // Añadir smooth scroll offset para navegación
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetID = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetID);
+                if (targetElement) {
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - headerHeight - 10; // 10 px padding extra
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', showElements);
+        window.addEventListener('load', showElements);
+    </script>
+
+</body>
+</html>
+

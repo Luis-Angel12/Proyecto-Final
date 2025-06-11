@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experiencia Porsche</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      text-align: left;
+    }
+
+    h1,
+    h2 {
+      color: gray;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-top: 50px;
+      border-bottom: 2px solid gray;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      text-align: justify;
+      padding: 20px 20px 20px 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      margin-top: 140px;
+      margin-bottom: 60px;
+    }
+
+    header {
+      background-color: black;
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: gray;
+    }
+
+    .animado {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+
+    .animado.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+      opacity: 0;
+      transition: opacity 0.7s ease-out;
+    }
+
+    img.visible {
+      opacity: 1;
+    }
+
+    .boton-inicio {
+      display: block;
+      margin: auto;
+      padding: 10px 30px;
+      border-radius: 5px;
+      border: 2px solid gray;
+      box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+      color: white;
+      background-color: #333;
+      cursor: pointer;
+      font-size: 1.25em;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+      text-align: center; 
+      text-decoration: none;
+    }
+
+    .boton-inicio:hover {
+      background-color: #555;
+      transform: scale(1.05);
+    }
+
+    .boton-inicio:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo"><h1>Experiencia Porsche</h1></div>
+      <nav>
+        <a href="#rendimiento">Rendimiento y Tecnología</a>
+        <a href="#diseno">Diseño y Estética</a>
+        <a href="#historia">Historia y Legado</a>
+        <a href="#exclusividad">Exclusividad y Personalización</a>
+        <a href="#experience">Porsche Experience Center</a>
+        <a href="#taycan">Innovación Eléctrica: Porsche Taycan</a>
+        <a href="#hoy">Porsche Hoy</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section id="rendimiento" class="animado">
+      <h2>Rendimiento y Tecnología</h2>
+      <p>
+        Porsche es sinónimo de rendimiento excepcional. Con sus autos, no solo se
+        busca velocidad, sino también una conducción precisa y emocionante.
+        Sus motores y tecnología avanzada, como sistemas de suspensión y tren
+        motriz, garantizan una experiencia de manejo incomparable. Cada auto es
+        diseñado para ofrecer la máxima eficiencia sin comprometer el rendimiento,
+        brindando a los conductores una sensación de control total.
+      </p>
+      <img class="animado" src="media/Porsche 911 motor.jpg" alt="Motor Porsche" />
+    </section>
+
+    <section id="diseno" class="animado">
+      <h2>Diseño y Estética</h2>
+      <p>
+        El diseño de un Porsche no pasa desapercibido. Cada modelo tiene líneas
+        elegantes y una estética deportiva que refleja lujo y exclusividad. La
+        marca mantiene una filosofía de diseño que es fácilmente reconocible, con
+        siluetas aerodinámicas que permiten una conducción eficiente mientras
+        mantienen un perfil atractivo y sofisticado. Cada detalle es cuidadosamente
+        pensado para crear una obra maestra sobre ruedas.
+      </p>
+      <img
+        class="animado"
+        src="media/Porsche 911 gt3 rs Interior.jpg"
+        alt="Interior Porsche"
+      />
+    </section>
+
+    <section id="historia" class="animado">
+      <h2>Historia y Legado</h2>
+      <p>
+        Desde su fundación en 1931 por Ferdinand Porsche, la marca ha marcado la
+        historia del automovilismo. Porsche ha sido sinónimo de innovación, desde
+        su primer modelo, el Porsche 356, hasta los legendarios 911 y el innovador
+        Taycan. La marca ha estado presente en las más prestigiosas competiciones
+        automovilísticas y ha logrado innumerables victorias, lo que consolidó su
+        reputación como líder en autos deportivos de alto rendimiento.
+      </p>
+      <img class="animado" src="media/Ferdinand Porsche.jpg" alt="Ferdinand Porsche" />
+    </section>
+
+    <section id="exclusividad" class="animado">
+      <h2>Exclusividad y Personalización</h2>
+      <p>
+        La experiencia Porsche se caracteriza por un alto grado de personalización.
+        Cada cliente tiene la oportunidad de configurar su auto según sus
+        preferencias, desde la selección de materiales hasta los acabados y
+        detalles del vehículo. Esta exclusividad asegura que cada Porsche sea único
+        y refleje el gusto y estilo de su propietario, ofreciendo una experiencia
+        única de conducción y propiedad.
+      </p>
+      <img class="animado" src="media/Exclusividad.jpg" alt="Exclusividad" />
+    </section>
+
+    <section id="experience" class="animado">
+      <h2>Porsche Experience Center</h2>
+      <p>
+        Para fortalecer la conexión emocional entre el conductor y el vehículo,
+        Porsche ofrece el Porsche Experience Center, un lugar donde los propietarios
+        pueden experimentar el verdadero potencial de sus autos. Ya sea a través de
+        experiencias de conducción en circuitos, pruebas en condiciones extremas o
+        eventos exclusivos, este centro permite a los fanáticos y propietarios de
+        Porsche llevar la experiencia al siguiente nivel.
+      </p>
+      <img
+        class="animado"
+        src="media/Porsche Experience Center.jpg"
+        alt="Porsche Experience Center"
+      />
+    </section>
+
+    <section id="taycan" class="animado">
+      <h2>Innovación Eléctrica: Porsche Taycan</h2>
+      <p>
+        En 2019, Porsche dio un paso hacia el futuro de la movilidad eléctrica con el
+        lanzamiento del Porsche Taycan. Este automóvil completamente eléctrico no solo
+        destaca por su diseño futurista, sino también por su rendimiento excepcional.
+        El Taycan fusiona la tradición de Porsche en la creación de vehículos de alto
+        rendimiento con la innovación eléctrica, marcando el inicio de una nueva era para
+        la marca.
+      </p>
+      <img class="animado" src="media/Porsche Taycan Motor.jpg" alt="Porsche Taycan Motor" />
+    </section>
+
+    <section id="hoy" class="animado">
+      <h2>Porsche Hoy</h2>
+      <p>
+        Hoy, Porsche sigue siendo una de las marcas de automóviles más prestigiosas del
+        mundo. Continuamente buscan innovar, expandiendo su línea de vehículos eléctricos
+        y manteniendo su tradición en autos deportivos de alto rendimiento. Con modelos
+        como el Porsche 911, el Macan, el Panamera y el Taycan, Porsche sigue ofreciendo
+        la mejor experiencia de conducción a los aficionados al lujo y la velocidad.
+      </p>
+      <p>
+        En resumen, la experiencia Porsche es sinónimo de lujo, rendimiento y tradición.
+        No solo es un vehículo; es una forma de vivir la pasión por el automovilismo y
+        la ingeniería avanzada. Cada Porsche no solo ofrece una experiencia de conducción,
+        sino una conexión emocional que dura toda la vida.
+      </p>
+    </section>
+
+    <a href="Porsche.html" class="boton-inicio">Página Inicial</a>
+
+    <script>
+      const animados = document.querySelectorAll(".animado");
+      const observerOptions = {
+        root: null,
+        threshold: 0.1,
+      };
+
+      const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            if (entry.target.tagName === "IMG") {
+              entry.target.classList.add("visible");
+            }
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+      animados.forEach((el) => observer.observe(el));
+
+      
+      document.querySelectorAll("nav a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+          const headerOffset = document.querySelector("header").offsetHeight; 
+          const elementPosition =
+            targetElement.getBoundingClientRect().top + window.scrollY;
+          const offsetPosition = elementPosition - headerOffset - 60;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth", 
+          });
+        });
+      });
+    </script>
+</body>
+</html>
